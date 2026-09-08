@@ -1,0 +1,158 @@
+{
+    "status": "DRIFT_DETECTED",
+    "dataset": {
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "features_monitored": 5
+    },
+    "summary": {
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1
+    },
+    "drifted_feature_names": [
+        "age",
+        "monthly_income",
+        "login_frequency",
+        "support_tickets"
+    ],
+    "warning_feature_names": [],
+    "features": {
+        "age": {
+            "status": "DRIFT",
+            "psi": 2.434408338895539,
+            "psi_status": "DRIFT",
+            "ks_test": {
+                "statistic": 0.17700000000000005,
+                "p_value": 1.490200419044452e-39,
+                "status": "DRIFT"
+            },
+            "missing_values": {
+                "reference_percentage": 0.0,
+                "production_percentage": 0.0,
+                "difference_percentage": 0.0
+            }
+        },
+        "monthly_income": {
+            "status": "DRIFT",
+            "psi": 2.8974577698041872,
+            "psi_status": "DRIFT",
+            "ks_test": {
+                "statistic": 0.6423000000000001,
+                "p_value": 2.174e-321,
+                "status": "DRIFT"
+            },
+            "missing_values": {
+                "reference_percentage": 0.0,
+                "production_percentage": 0.0,
+                "difference_percentage": 0.0
+            }
+        },
+        "account_balance": {
+            "status": "NORMAL",
+            "psi": 0.010063430808168999,
+            "psi_status": "NORMAL",
+            "ks_test": {
+                "statistic": 0.025700000000000056,
+                "p_value": 0.29786450739162085,
+                "status": "NORMAL"
+            },
+            "missing_values": {
+                "reference_percentage": 0.0,
+                "production_percentage": 0.0,
+                "difference_percentage": 0.0
+            }
+        },
+        "login_frequency": {
+            "status": "DRIFT",
+            "psi": 0.21649059650915037,
+            "psi_status": "DRIFT",
+            "ks_test": {
+                "statistic": 0.016800000000000037,
+                "p_value": 0.8095947350489224,
+                "status": "NORMAL"
+            },
+            "missing_values": {
+                "reference_percentage": 0.0,
+                "production_percentage": 0.0,
+                "difference_percentage": 0.0
+            }
+        },
+        "support_tickets": {
+            "status": "DRIFT",
+            "psi": 9.288556175906367,
+            "psi_status": "DRIFT",
+            "ks_test": {
+                "statistic": 0.5301,
+                "p_value": 3.81e-321,
+                "status": "DRIFT"
+            },
+            "missing_values": {
+                "reference_percentage": 0.0,
+                "production_percentage": 0.0,
+                "difference_percentage": 0.0
+            }
+        }
+    },
+    "prediction_drift": {
+        "status": "DRIFT",
+        "class_distribution": {
+            "reference": {
+                "0": 0.4798,
+                "1": 0.5202
+            },
+            "production": {
+                "0": 0.208,
+                "1": 0.792
+            }
+        },
+        "probability_drift": {
+            "psi": {
+                "psi": 2.7846226426635012,
+                "status": "DRIFT"
+            },
+            "ks_test": {
+                "statistic": 0.3901,
+                "p_value": 9.331961623422725e-195,
+                "status": "DRIFT"
+            }
+        }
+    },
+    "alerts": [
+        {
+            "severity": "CRITICAL",
+            "type": "MODEL_DRIFT",
+            "message": "Significant model drift has been detected."
+        },
+        {
+            "severity": "CRITICAL",
+            "type": "FEATURE_DRIFT",
+            "feature": "age",
+            "message": "Drift detected in feature 'age'."
+        },
+        {
+            "severity": "CRITICAL",
+            "type": "FEATURE_DRIFT",
+            "feature": "monthly_income",
+            "message": "Drift detected in feature 'monthly_income'."
+        },
+        {
+            "severity": "CRITICAL",
+            "type": "FEATURE_DRIFT",
+            "feature": "login_frequency",
+            "message": "Drift detected in feature 'login_frequency'."
+        },
+        {
+            "severity": "CRITICAL",
+            "type": "FEATURE_DRIFT",
+            "feature": "support_tickets",
+            "message": "Drift detected in feature 'support_tickets'."
+        },
+        {
+            "severity": "CRITICAL",
+            "type": "PREDICTION_DRIFT",
+            "message": "Model prediction distribution has changed significantly."
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+[
+    {
+        "timestamp": "2026-08-26T07:44:40.468003+00:00",
+        "status": "HEALTHY",
+        "total_features": 5,
+        "drifted_features": 0,
+        "warning_features": 1,
+        "healthy_features": 4,
+        "reference_rows": 5000,
+        "production_rows": 1000,
+        "prediction_drift": "NORMAL"
+    },
+    {
+        "timestamp": "2026-09-07T14:48:54.085079+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T14:53:13.925142+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T14:54:13.349057+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T14:55:13.456296+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T15:06:55.417579+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T17:01:51.455089+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-07T17:08:00.529223+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    },
+    {
+        "timestamp": "2026-09-08T14:46:31.522887+00:00",
+        "status": "DRIFT_DETECTED",
+        "total_features": 5,
+        "drifted_features": 4,
+        "warning_features": 0,
+        "healthy_features": 1,
+        "reference_rows": 5000,
+        "production_rows": 2000,
+        "prediction_drift": "DRIFT"
+    }
+]
